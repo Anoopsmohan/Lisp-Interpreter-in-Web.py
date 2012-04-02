@@ -1,0 +1,80 @@
+$def with (form, text)
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Lisp Interpreter | Home Page</title>
+      
+
+	<link href="/static/styles.css" rel="stylesheet"  type="text/css" media="screen" />
+	
+
+	<link rel="stylesheet" type="text/css" href="/static/buttons.css"/>
+	<link rel="stylesheet" type="text/css" href="/ststic/reset-min.css"/> 
+        
+        <script type="text/javascript" src="/static/jquery.js"></script>
+        
+        <script type="text/javascript">
+                                jQuery(document).ready(function() {
+                                jQuery("#button").click(function() {
+                                        var input_string = $$("#textfield").val();
+                                        jQuery.ajax({
+                                                type: "POST",
+                                                data: {textfield : input_string},
+                                                success: function(result) {
+                                                jQuery('#foo').html(result).hide().fadeIn(1500);
+                                                },
+                                                });
+                                        return false;
+                                        });
+                                });
+        
+                        </script>
+</head>
+    
+<body>
+
+
+<div id="main_bg">
+<div id="main">
+<!-- header -->
+<div id="header">
+	<div id="logo">
+		<a href="http://anoopsmohan.blogspot.com">Anoop.S.M</a>
+		<h2><a href="http://anoopsmohan.blogspot.com"><small>MCA Final Project</small></a></h2>
+	</div>
+	<h1>Online LISP Interpreter</h1>
+</div>	
+ <font color="red" size="5" >$context.username</font>
+ <div id="buttons">
+	<a href="http://0.0.0.0:8080/home.html" class="but_home" title=""></a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/examples.html" class="but" title="">Examples</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about.html" class="but" title="">About</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about_us.html" class="but" title="">About me</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/contact_us.html" class="but" title="">Contact </a>
+	
+	<a href="/signout" class="but" title="">Sign Out</a>
+	<a href="http://0.0.0.0:8080/feed_back.html" class="but" title="">Feed Back</a>
+	
+	</div>
+<div class="inner_copy"><div class="inner_copy">Find best premium and <a href="http://www.getjoomlatemplatesfree.com" title="Joomla templates">free Joomla templates</a> at GetJoomlaTemplatesFree.com</div></div>
+<!-- / header -->
+
+
+	
+        <br>
+        <form class="form" method="post" align="center"> 
+	<center><font size="5" face="arial black" color="99FF00"> Type your Lisp program.</font><br><br><br>
+      <center>  $:form.render()</center>
+	<br>
+       <center> <input class="button green" type="submit" value="Evaluate" id="button"></center><br><center><font size="5", color="FF0000"><span id="foo" >$text</span></center>
+        </form>
+
+        <br><br>
+</div> 
+
+
+</body>
+    
+</html>

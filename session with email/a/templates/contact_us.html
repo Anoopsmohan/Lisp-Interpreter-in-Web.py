@@ -1,0 +1,175 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Online Lisp Interpreter</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/static/styles.css" rel="stylesheet" type="text/css" />
+
+<script type = "text/javascript">
+
+function validateForm()
+{
+
+var x=document.forms["myForm"]["name"].value
+if (x==null || x=="")
+  {
+  alert("Name must be filled out");
+  return false;
+  }
+
+
+
+var x=document.forms["myForm"]["email"].value
+if (x==null || x=="")
+  {
+  alert("Email must be filled out");
+  return false;
+  }
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+var x=document.forms["myForm"]["message"].value
+if (x==null || x=="")
+  {
+  alert("Message must be filled out");
+  return false;
+  }
+
+alert("Message send to Anoop")
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+<div id="main_bg">
+<div id="main">
+<!-- header -->
+<div id="header">
+	<div id="logo">
+		<a href="http://anoopsmohan.blogspot.com">Anoop.S.M</a>
+		<h2><a href="http://anoopsmohan.blogspot.com"><small>MCA Final Project</small></a></h2>
+	</div>
+	<h1>Online LISP Interpreter</h1>
+</div>	
+ 
+ <div id="buttons">
+	<a href="http://0.0.0.0:8080/home.html" class="but_home" title=""></a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/examples.html" class="but" title="">Examples</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about.html" class="but" title="">About</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about_us.html" class="but" title="">About me</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/contact_us.html" class="but" title="">Contact </a>
+	<a href="http://0.0.0.0:8080/signin.html" class="but" title="">Sign In</a>
+	<a href="http://0.0.0.0:8080/signup.html" class="but" title="">Sign Up</a>
+	<a href="http://0.0.0.0:8080/home.html" class="but" title="">Sign Out</a>
+	
+	</div>
+<div class="inner_copy"><div class="inner_copy">Find best premium and <a href="http://www.getjoomlatemplatesfree.com" title="Joomla templates">free Joomla templates</a> at GetJoomlaTemplatesFree.com</div></div>
+<!-- / header -->
+<div class="top">
+<!-- / header -->
+<!-- content -->
+				<div class="cont_top"></div>
+				<div id="content">
+					<div style="padding: 0px 0px 0px 20px;">
+
+						<div style="height:15px"></div>
+						
+
+					</div>
+					<div style="height:15px"></div>
+
+				<div id="cont_razd">
+					<div id="right">
+					<h1></h1>
+					<div style="height:20px;"></div>
+					<div class="box_us">
+							<div class="box_us_l">
+							
+							</div>
+							<div class="box_us_r">
+								
+							</div>
+							<div style="clear: both; height:15px;"></div>
+						</div>
+						
+						<div class="box_us">
+							<div class="box_us_l">
+
+							</div>
+							<div class="box_us_r">
+								
+							</div>
+							<div style="clear: both; height:15px;"></div>
+						</div>
+						
+						<div class="box_us">
+							<div class="box_us_l">
+							
+							</div>
+							<div class="box_us_r">
+							
+							</div>
+							<div style="clear: both; height:15px;"></div>
+						</div>
+						<div style="height:25px;"></div>
+						
+					<div style="height:20px;"></div>
+	
+					</div>
+					<div id="left">
+						<h1>Contact Me</h1>
+						<div style="height:20px"></div> 
+<b>CONTACT</b>
+<p>Email : anoopmhn2009@gmail.com
+<p>Phone : 09447314687
+
+<br><br><p>If you don't want to use the contact info above feel free to fill the comment below - I'm always open for suggestions and questions, criticism and praise.
+						<form action="" method="post" onsubmit="return validateForm()" name="myForm">
+							<div style="height:30px;"><label>Name</label><input class="input_txt2" value="" name="name" type="text" /></div><div style="height:10px"></div>
+							<div style="height:30px;"><label>E-mail</label><input class="input_txt2" value="" name="email" type="text" /></div><div style="height:10px"></div>
+							
+							<div><textarea class="text_area2" cols="32" rows="3" name="message"></textarea></div>
+							<div style="height:15px;"></div>
+							<div style="height:17px;">
+							<input class="submit2" name="send" type="submit" value="Send" /><input class="submit2" name="reset" type="reset" value="Reset" />
+							</div>
+							<div style="height:10px;"></div>
+						</form>
+					
+									
+					
+							
+					</div>
+					<div style="clear: both"></div>
+					</div>
+				</div>
+				<div class="cont_bot"></div>
+<!-- / content --> 
+	<div style="height:15px"></div>
+<!-- bottom -->
+
+	
+<!-- / bottom --> 
+	<div id="footer">
+		<p>Copyright statement. Designed by <a href="http://anoopsmohan.blogspot.com">Anoop.S.m</a></p>
+		<p>All rights reserved.</p>
+		
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

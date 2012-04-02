@@ -1,0 +1,151 @@
+
+<html>
+<head>
+<script type = "text/javascript">
+
+function validateForm()
+{
+
+var x=document.forms["myForm"]["username"].value
+if (x==null || x=="" || x=="username")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+
+var x=document.forms["myForm"]["password"].value
+var y=document.forms["myForm"]["cpassword"].value
+if (x==null || x=="" || x=="password")
+  {
+  alert("Password must be filled out");
+  return false;
+  }
+if (x!=y)
+  {
+  alert("Passwords doesn't match");
+  return false;
+  }
+
+var x=document.forms["myForm"]["firstname"].value
+if (x==null || x=="" || x=="firstname")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+
+var x=document.forms["myForm"]["lastname"].value
+if (x==null || x=="" || x=="lastname")
+  {
+  alert("Last name must be filled out");
+  return false;
+  }
+
+
+var x=document.forms["myForm"]["email"].value
+if (x==null || x=="" || x=="email address")
+  {
+  alert("Email must be filled out");
+  return false;
+  }
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+}
+
+</script>
+
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="/static/style2.css" media="all" />
+        <link href="/static/styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/static/buttons.css" rel="stylesheet" type="text/css" media="all"/>
+   
+</head>
+<body>
+
+<div id="main_bg">
+<div id="main">
+<!-- header -->
+<div id="header">
+	<div id="logo">
+		<a href="http://anoopsmohan.blogspot.com">Anoop.S.M</a>
+		<h2><a href="http://anoopsmohan.blogspot.com"><small>MCA Final Project</small></a></h2>
+	</div>
+	<h1>Online LISP Interpreter</h1>
+</div>	
+ 
+ <div id="buttons">
+	<a href="http://0.0.0.0:8080/home.html" class="but_home" title=""></a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/examples.html" class="but" title="">Examples</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about.html" class="but" title="">About</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about_us.html" class="but" title="">About me</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/contact_us.html" class="but" title="">Contact </a>
+	<a href="http://0.0.0.0:8080/signin.html" class="but" title="">Sign In</a>
+	<a href="http://0.0.0.0:8080/signup.html" class="but" title="">Sign Up</a>
+	<a href="http://0.0.0.0:8080/home.html" class="but" title="">Sign Out</a>
+	
+	</div>
+
+<!-- / header -->
+
+	<center>
+	<div id="container">
+        <form  name="myForm" method="POST" onsubmit="return validateForm()">
+	
+            <!-- #first_step -->
+          
+                <h1>SIGN UP FOR AN <span>ONLINE LISP INTERPRETER</span> ACCOUNT</h1>
+<div class="form">
+                
+<label for="username">At least 4 characters. Uppercase letters, lowercase letters and numbers only.</label>
+<input type="text" name="username" id="username" value="username" />
+<label for="password"><br>At least 4 characters. Use a mix of upper and lowercase for a strong password.</label>
+<input type="password" name="password" id="password" value="password" /><br>
+<label for="cpassword"><br>If your passwords aren’t equal, you won’t be able to continue with signup.</label>
+<input type="password" name="cpassword" id="cpassword" value="password" />
+<label for="firstname"><br>Your First Name. </label>
+<input type="text" name="firstname" id="firstname" value="first name" />
+<label for="lastname"><br><br>Your Last Name. </label>
+<input type="text" name="lastname" id="lastname" value="last name" />
+<label for="email"><br><br>Your email address. </label> 
+<input type="text" name="email" id="email" value="email address" />
+<label for="age"><br><br>Your age range. </label>
+<select id="age" name="age">
+                        <option> 0 - 17</option>
+                        <option>18 - 25</option>
+                        <option>26 - 40</option>
+                        <option>40+</option>
+                    </select>
+<label for="gender"><br><br><br>Your Gender.</label>
+<select id="gender" name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+<label for="country"><br><br>Your country. </label> 
+<select id="country" name="country">
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>India</option>
+                        <option>Serbia</option>
+                        <option>Other</option>
+                    </select></div></div>
+<center>
+<input class="button green" type="submit" value="Submit"/><input class="button orange" type="reset" value="Reset"/></div></center>
+  </div>
+  
+</div>
+
+           
+            
+        </form>
+	</div></center>
+	
+</body>
+</html>

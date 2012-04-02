@@ -1,0 +1,102 @@
+* {border:0;margin:0}
+img {border:0}
+body {font:12px Arial, Helvetica, sans-serif;color:#000;background:url(/static/bg.jpg) center top no-repeat #000;line-height:19px}
+.inner_copy, .inner_copy a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+#main {width:1014px;margin:0px auto;background:url(/static/main.jpg) right top no-repeat}
+#header {width:1014px;height:140px}
+#logo {height:52px;padding:10px 0px 0px 800px}
+#logo H2 {font-family:Arial, Helvetica, sans-serif;color:#fff;font-size:18px;font-style:italic}
+#logo a {text-decoration:none;font-style:italic;font-size:16px;color:#fff}
+#logo H2 a {font-size:12px;font-family:Arial, Helvetica, sans-serif;font-weight:100}
+#header H1 {text-align:center;font-size:60px;font-family:Arial Black, Helvetica, sans-serif; color:#98bf21; }
+#buttons {text-align:center;height:40px;margin-left:0;padding-left:0;background:url(/static/menu.png) left top no-repeat}
+#buttons a {font-family:Arial, Helvetica, sans-serif;font-size:14px;display:block;float:left;text-decoration:none;color:#000;text-align:center;padding-top:10px;height:30px}
+.but {width:103px}
+.but_home {background:url(/static/but_home.png) left top no-repeat;height:40px;width:62px;display:block}
+.but_razd {width:2px;height:40px;background:url(/static/razd_but.gif) left 6px no-repeat;float:left}
+#buttons .but:hover {color:#949494;background:url(/static/but_hov.png) center 7px no-repeat}
+.top {height:360px;padding-top:20px}
+.top_text {width:942px;float:left;background:url(/static/content_text.png);height:308px;padding:0px 32px 0px 0px}
+.top_img {float:left;padding:15px 31px 0px 15px}
+#content {width:100%;background:#DFDDDD}
+.cont_top {background:url(/static/cont_top.png) left top no-repeat;height:10px;width:100%}
+.cont_bot {background:url(/static/cont_bot.png) left bottom no-repeat;height:10px;width:100%}
+#cont_razd {background:url(static/cont_razd.gif) 679px repeat-y;width:100%}
+.cont_home {padding:0px 20px 0px 20px}
+.home_box {float:left;width:298px}
+#left {width:640px;float:left;color:#000;margin-left:20px}
+.text {padding:0px 0px 15px 0px}
+.img_l {float:left;margin:6px 20px 5px 0px}
+.img_r {float:right;margin:9px 10px 3px 10px}
+.span_cont {color:#262626;font-size:12px;font-weight:bold}
+ H1 {font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:100;color:#04078E;text-align:left;padding:10px 0px 0px 0px}
+.read_l {font-size:12px;color:#fff;text-decoration:none;padding-right:2px;background:url(/static/read.jpg) left top no-repeat;display:block;height:17px;line-height:17px;width:66px;padding:0;text-align:center;float:left}
+.read_l:hover {font-size:12px;text-decoration:underline}
+
+.read_c {font-size:18px;color:#fff;text-decoration:none;padding-right:5px;background:url(/static/but_hov.png) left top no-repeat;display:block;height:30px;line-height:17px;width:100px;padding:0;text-align:center;float:center}
+.read_c:hover {font-size:20px;text-decoration:underline}
+
+.text_area3 {width:622px;height:168px;font-size:25px;border:none;background:url(/static/text_area2.jpg) 0px 0px repeat-x;padding:8px 12px 8px 12px;color:#FF0000;font-family:Arial, Helvetica, sans-serif}
+
+
+.next {width:100%;text-align:right;padding:0px 0px 0px 0px}
+.next a {color:#fff;text-decoration:none}
+.next a:hover {text-decoration:underline}
+#right {float:right;width:293px;margin-right:20px}
+.span_dat {color:#262626;text-decoration:underline;font-weight:bold}
+#bottom {width:100%;background:url(/static/bottom.jpg) left top no-repeat #DFDDDD}
+#b_col1 {width:197px;float:left;margin-left:20px}
+#b_col2 {width:364px;float:left;margin-left:40px}
+#b_col3 {width:340px;float:left;margin-left:27px;text-align:center}
+#b_col3 label {width:50px;float:left;text-align:left;padding:5px 0px 0px 0px}
+.input_txt {width:239px;border:none;background:url(/static/input_txt.png) left top no-repeat;padding:5px 10px 7px 10px;color:#000;float:right}
+.text_area {width:319px;height:60px;border:none;background:url(/static/text_area.png) 0px 0px no-repeat;padding:5px 10px 7px 10px;color:#000;font-family:Arial, Helvetica, sans-serif}
+.submit {background:url(/static/read.jpg) right 7px no-repeat;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:12px;padding:8px 6px 3px 0px;font-size:12px;color:#fff;text-decoration:none;font-weight:100;width:66px;margin:0px 0px 0px 0px}
+.spis_bot {list-style:none;padding:0px 0px 0px 0px}
+.spis_bot li {padding:5px 0px 0px 18px;background:url(/static/fish2.png) 0px 14px no-repeat}
+.spis_bot a {color:#262626;text-decoration:none;font-weight:100;background:url(/static/spis_bot_a.gif) bottom repeat-x;display:block}
+.spis_bot a:hover {text-decoration:none}
+.fu_i {padding:0px 14px 0px 0px;vertical-align:middle }
+#b_col2 ul {list-style:none;padding:0px 0px 0px 13px}
+#b_col2 li {padding:8px 0px 0px 0px;background:none}
+#footer {height:63px;font-size:12px;color:#fff;text-align:center;padding:27px 0px 0px 0px;background:url(/static/footer.jpg) 0px 15px no-repeat}
+#footer a {color:#fff;font-size:12px;text-decoration:none}
+#footer a:hover {color:#fff;font-size:12px;text-decoration:underline}
+/* blog */
+.dat_img {font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#fff;float:left;width:50px;height:46px;padding:4px 0px 0px 0px;margin-right:15px;background:url(/static/dat_img.gif) 0px 0px no-repeat;text-align:center}
+.datc_coment {height:27px;width:570px;background:url(/static/datc_coment.gif) top repeat-x;padding:3px 0px 0px 0px}
+.datc  {float:left;width:346px}
+.coment {float:right;width:146px;text-align:right}
+.datc_coment a {color:#262626;text-decoration:none;font-weight:bold}
+.datc_coment a:hover {text-decoration:underline}
+.img_ind1 {padding:17px 0px 10px 0px}
+.text_ind1 {padding:0px 87px 0px 0px}
+h2 {font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:100;color:#04078E;text-align:left;padding:0px 0px 0px 0px}
+.spis {list-style:none;padding:0px 0px 0px 0px}
+.spis li {padding:8px 0px 2px 20px;background:url(/static/spis.gif) left bottom no-repeat}
+.spis a:hover {text-decoration:none}
+.spis a {color:#262626;text-decoration:none;font-weight:bold}
+.gal_num {width:13px;height:21px;padding:0px 0px 0px 7px;display:block;background:url(/static/gal_num.gif) left top no-repeat;color:#fff;font-size:12px;margin:0px 5px 0px 0px;text-decoration:none;float:left}
+.gal_num:hover {background:url(/static/gal_num_hover.gif) left top no-repeat;text-decoration:none}
+.a_blog {font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:100;color:#04078E;text-align:left;padding:10px 0px 0px 0px;text-decoration:none}
+.a_blog:hover {text-decoration:underline}
+/* gallery */
+.row {padding:0px 0px 0px 20px;height:273px}
+.box_img2 {width:272px;height:273px;background:url(/static/box_img.jpg) 0px 0px no-repeat;padding:0px 20px 0px 20px;float:left;color:#fff}
+.box_razd {width:19px;height:50px;float:left}
+.box_img2 h1 {font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:100;color:#74DBFE;text-align:left;padding:15px 0px 15px 0px}
+.rol_over:hover {background:url(/static/rol_over_galery.png) left top no-repeat}
+/* about us */
+.box_about {width:310px;float:left}
+/* contact us */
+#left label {width:103px;float:left;padding:5px 0px 0px 5px}
+.input_txt2 {width:502px;border:none;background:url(/static/input_txt2.gif) left top no-repeat;padding:8px 15px 8px 15px;color:#000}
+.text_area2 {width:611px;height:112px;border:none;background:url(/static/text_area2.gif) 0px 0px no-repeat;padding:6px 15px 6px 15px;color:#000;font-family:Arial, Helvetica, sans-serif}
+.submit2 {background:url(/static/read.jpg) right 0px no-repeat;text-align:center;font-family:Arial, Helvetica, sans-serif;font-size:12px;padding:0;font-size:12px;color:#fff;text-decoration:none;width:66px;height:17px;margin:0px 54px 0px 0px}
+.box_us {width:265px;background:url(/static/box_us.gif) 0px bottom repeat-x;padding-left:0}
+.box_us_l {width:28px;float:left;padding-top:0;vertical-align:top;text-align:left}
+.box_us_r {width:227px;float:left}
+/* Header scroll */
+.roundabout-holder {list-style:none;width:714px;height:280px;margin:0 auto}
+.roundabout-moveable-item {height:286px;width:510px;background-color:#f3f3f3;font-size:2em;cursor:pointer}
+.roundabout-in-focus {cursor:auto}

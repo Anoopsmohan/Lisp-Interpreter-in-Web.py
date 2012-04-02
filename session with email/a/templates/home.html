@@ -1,0 +1,183 @@
+$def with (count)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Online Lisp Interpreter</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/static/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/static/buttons.css"/>
+<script type = "text/javascript">
+
+function validateForm()
+{
+
+var x=document.forms["myForm"]["name"].value
+if (x==null || x=="")
+  {
+  alert("Name must be filled out");
+  return false;
+  }
+
+
+
+var x=document.forms["myForm"]["email"].value
+if (x==null || x=="")
+  {
+  alert("Email must be filled out");
+  return false;
+  }
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+
+var x=document.forms["myForm"]["message"].value
+if (x==null || x=="")
+  {
+  alert("Message must be filled out");
+  return false;
+  }
+
+}
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<div id="main_bg">
+<div id="main">
+<!-- header -->
+<div id="header">
+	<div id="logo">
+		<a href="http://anoopsmohan.blogspot.com">Anoop.S.M</a>
+		<h2><a href="http://anoopsmohan.blogspot.com"><small>MCA Final Project</small></a></h2>
+	</div>
+	<h1>Online LISP Interpreter</h1>
+</div>	
+ 
+ <div id="buttons">
+	<a href="http://0.0.0.0:8080/home.html" class="but_home" title=""></a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/examples.html" class="but" title="">Examples</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about.html" class="but" title="">About</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/about_us.html" class="but" title="">About me</a><div class="but_razd"></div>
+	<a href="http://0.0.0.0:8080/contact_us.html" class="but" title="">Contact </a>
+	<a href="http://0.0.0.0:8080/signin.html" class="but" title="">Sign In</a>
+	<a href="http://0.0.0.0:8080/signup.html" class="but" title="">Sign Up</a>
+	<a href="http://0.0.0.0:8080/home.html" class="but" title="">Sign Out</a>
+        <a href="http://0.0.0.0:8080/feed_back.html" class="but" title="">Feed Back</a>
+	
+	</div>
+
+<!-- / header -->
+<div class="top">
+
+
+
+<!-- content -->
+				<div class="cont_top"></div>
+				<div id="content">
+					<div class="cont_home">
+						<div class="home_box">
+							<h1>Lisp History</h1>
+							<div style="height:15px"></div>
+
+						<div style="height:10px;"></div>
+							<b>what is Lisp? </b> Lisp is a family of computer programming languages with a long history. Lisp was invented by John McCarthy in 1958 while he was at the Massachusetts Institute of Technology (MIT) . The following figure shows the Lisp machine in the MIT museum.
+<center><img src="/static/lispmachine.jpg"  alt="" /></center><br><br><p>McCarthy published its design in a paper on 1960.
+Lisp was first implemented by Steve Russell on an IBM 704 computer. Russell had read McCarthy's paper, and realized  that the Lisp eval function could be implemented in machine code. The result was a working Lisp interpreter which could be used to run Lisp programs, or more properly, 'evaluate Lisp expressions.'<br><br><p>
+
+ Lisp is the second oldest high-level programming language in widespread use today; Fortran is the first oldest high-level programming language. Today, the most widely known general-purpose Lisp dialects are Common Lisp, Scheme, and Clojure. Other dialects are Emacs Lisp, AutoLISP, Newlisp, Arc, SKILL,Racket, Logo, Clojure, ISLISP.<br><br><p>The first complete Lisp compiler, written in Lisp, was implemented in 1962 by Tim Hart and Mike Levin at MIT.<br><br><p>
+
+I am sure, now you must think that 'lisp is an oldest programming language, then today what is the relevance of this language?' I have a good answer for this question. I agree that lisp is an oldest programming language, also it is still widely used in Artificial intelligence. Hence it is not an useless language.
+
+ <div style="height:5px"></div>
+							<div style="height:20px;"><a class="read_l" href="#">more</a></div>
+						</div><div style="width: 40px; height:20px; float: left;"></div>
+						<div class="home_box">
+							<h1>Instructions</h1>
+							<div style="height:15px"></div>
+							<img src="/static/lisp.jpg" alt="" />
+                                                       
+							<div style="height:10px;"></div>
+							"Online Lisp Interpreter" provides you a great opportunity to run your lisp programs via Internet. The only Condition for that is you must need to register with this site using your personal informations like name, age, country etc.... It is not a complex process. Please spend just 1 or 2 minutes for registration, after that you can enter to the world of Lisp. 
+<form  align="center" name="form" method="POST">
+<input type="button" id="bt1" value="sign in" class="button green" onclick="location = 'http://0.0.0.0:8080/signin.html';"/>
+<input type="button" id="bt2" value="sign up" class="button green" onclick="location = 'http://0.0.0.0:8080/signup.html';"/>
+</form> 
+							
+					</div><div style="width: 40px; height:20px; float: left;"></div>
+					<div class="home_box">
+							<h1>Python </h1>
+							<div style="height:15px"></div>
+							
+							<div style="height:10px;"></div>
+							<p>Python was conceived in the late 1980 and its implementation was started in December 1989  by Guido van Rossum. Van Rossum is Python's principal author, and his continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, Benevolent Dictator for Life (BDFL).<br><br><p> Python 2.0 was released on 16 October 2000, with many major new features including a full garbage collector and support for Unicode.  Python 3.0 (also known as Python 3000 or py3k), a major, backwards-incompatible release, was released on 3 December 2008 after a long period of testing. Many of its major features have been back ported to the backwards-compatible Python 2.6 and 2.7. Python has twice been awarded as TIOBE Programming Language of the Year (2007, 2010), which is given to the language with the greatest growth in popularity over the course of the year (as measured by the TIOBE index). <br><br><p>
+
+
+Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.<br><br><p>
+
+Python runs on Windows, Linux/Unix, Mac OS X, and has been ported to the Java and .NET virtual machines. Python is free to use, even for commercial products, because of its OSI-approved open source license<br><br><p>
+
+
+Unlike languages like C/C++/Java, Python is extremely friendly to beginners. It is also a modern, powerful general purpose programming language used by companies and research institutions all over the world to solve complex computing problems.<br><br><div style="height:5px"></div>
+							<div style="height:20px;"><a class="read_l" href="#">more</a></div>
+					</div>
+						
+					<div style="clear: both"></div>
+					</div>
+				</div>
+				<div class="cont_bot"></div>
+<!-- / content --> 
+	<div style="height:15px"></div>
+<!-- bottom -->
+				<div class="cont_top"></div>
+				<div id="content">
+					<div style="height:15px"></div>
+					
+				<div id="cont_razd">
+					<div id="left">
+						<h1>Write your comments</h1>
+						<div style="height:20px"></div> 
+						<form action="" method="post" onsubmit="return validateForm()" name="myForm">
+							<div style="height:30px;"><label>Name</label><input class="input_txt2" value="" name="name" type="text" /></div><div style="height:10px"></div>
+							<div style="height:30px;"><label>E-mail</label><input class="input_txt2" value="" name="email" type="text" /></div><div style="height:10px"></div>
+							
+							<div><textarea class="text_area2" cols="32" rows="3" name="message"></textarea></div>
+							<div style="height:15px;"></div>
+							<div style="height:50px;">
+							<input class="submit2" name="send" type="submit" value="Send" /><input class="submit2" name="reset" type="reset" value="Reset" />
+							</div>
+							
+						</form>
+						<h1>Comments</h1>		
+					$for num in reversed(count):
+					   <p><font size="3" face="arial" color="red">$num[0]</font><br><font size="2" face="arial">$num[1]</font></p><br>
+							
+					</div>
+					<div style="clear: both"></div>
+					</div>
+				</div>
+				<div class="cont_bot"></div>
+	
+<!-- / bottom --> 
+	<div id="footer">
+		<p>Copyright statement. Designed by <a href="http://anoopsmohan.blogspot.com">Anoop.S.M</a></p>
+		<p>All rights reserved.</p>
+		
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>
